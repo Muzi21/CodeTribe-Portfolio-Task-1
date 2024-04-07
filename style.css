@@ -1,0 +1,127 @@
+
+    .topnav {
+      background-color: teal;
+      padding: 10px 0; 
+      overflow: hidden; 
+    }
+
+    .topnav a {
+      float: left;
+      color: white;
+      padding: 15px 20px; 
+      text-decoration: none;
+      margin: 0 2px; 
+    }
+
+    .topnav-right {
+      float: right;
+    }
+
+    .topnav a.active {
+      background-color: #555; 
+    }
+
+    .topnav a:hover {
+      background-color: #444; 
+    }
+
+    .video-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .about-section {
+      padding: 50px 0;
+    }
+	   .btn-download {
+            background-color: teal;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+        }
+		  .btn{
+		  display: flex;
+          justify-content: center;
+          align-items: center;
+          height
+	      }
+		  button{
+			    background-color: teal;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 200px;
+            margin: 20px auto; 
+		  }
+
+    .imageP {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 300px;
+      height: 300px;
+      display: block;
+      margin: auto;
+	   border-radius: 50%;
+    }
+	.VMT{
+
+      height:80px;
+	}
+
+    .social-icons {
+      text-align: center;
+	  font-size:40px;
+	  
+    }
+	a {
+    color: black;
+   }
+
+* {
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+   border-radius:8px;
+}
+
+ .map {
+	 border-radius:8px;
+     width: 65%;
+ }
+         .contact-section {
+            padding: 50px 0;
+        }
+        .contact-info {
+            text-align: center;
+        }
+        .contact-info p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .form-control {
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+        .form-control:focus {
+            box-shadow: none;
+        }
+   
+		 
+		
+		
