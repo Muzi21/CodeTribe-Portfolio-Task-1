@@ -1,0 +1,324 @@
+/* Reset some default browser styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+  text-align: center;
+
+}
+
+
+/* Set a base font size */
+body {
+    font-size: 16px;
+}
+
+/* Header styles */
+header {
+    background-color: lightcoral;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Section styles */
+section {
+    padding: 40px;
+}
+
+/* Home section */
+#index {
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+#index h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#index p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* about section */
+#about ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+#about li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* gallery section */
+#gallery {
+    background-color: #f0f0f0;
+}
+
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.gallery-item p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Contact section */
+#contact {
+    text-align: center;
+}
+
+#contact h2 {
+    margin-bottom: 20px;
+}
+
+#contact form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#contact input,
+#contact textarea,
+#contact button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact button {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+	min-height: 10%;
+  height: auto !important;
+  margin-bottom: -40px; /* Height of the footer */
+  display: block;
+
+
+	
+}
+/* social media icons styling */
+.social-icons {
+    font-size: 36px;
+    cursor: pointer;
+}
+.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
+    color: #008000;
+}
+.fab {
+    color: #000000;
+}
+div.gallery {
+  margin: 5px;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+*{
+  margin:0; padding:0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container{
+  max-width: 85%;
+  margin:20px auto;
+}
+
+.container .title{
+  font-size: 25px;
+  background-color: lightcoral;
+
+  color:#fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+  padding:15px;
+}
+
+.container .image-container{
+  columns:3 250px;
+  gap:15px;
+}
+
+.container .image-container img{
+  margin-bottom: 10px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+  .slider-frame{
+      overflow: hidden;
+      height: 800px;
+      width: 1200px;
+      margin-left: 360px;
+      margin-top: 20px;
+  }
+ 
+  /*---------- SLIDE ANIMATION --------------*/
+ 
+ 
+  @keyframes slide_animation{
+      0% {left:0px;}
+      10% {left:0px;}
+      20% {left:1200px;}
+      30% {left:1200px;}
+      40% {left: 2400px;}
+      50% {left: 2400px;}
+      60% {left: 1200px;}
+      70% {left: 1200px;}
+      80% {left: 0px;}
+      90% {left: 0px;}
+      100% {left:0px;}
+  }
+ 
+  @-webkit-keyframes slide_animation{
+      0% {left:0px;}
+      10% {left:0px;}
+      20% {left:1200px;}
+      30% {left:1200px;}
+      40% {left: 2400px;}
+      50% {left: 2400px;}
+      60% {left: 1200px;}
+      70% {left: 1200px;}
+      80% {left: 0px;}
+      90% {left: 0px;}
+      100% {left:0px;}
+  }
+ 
+  .slide-images{
+      width: 3600px;
+      height: 800px;
+      margin: 0 0 0 -2400px;
+      position: relative;
+      -webkit-animation-name: slide_animation;
+      animation-name: slide_animation;
+      -webkit-animation-duration: 33s;
+      animation-duration: 33s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-direction: alternate;
+      animation-direction: alternate;
+      -webkit-animation-play-state: running;
+      animation-play-state: running;
+  }
+ 
+  .img-container{
+      height: 800px;
+      width: 1200px;
+      position: relative;
+      float: left;
+  }
+
+/* styles.css */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type="text"], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #f08080;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #AA336A;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to each other */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 600px) {
+  .column, input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
