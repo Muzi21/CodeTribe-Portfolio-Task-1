@@ -149,6 +149,7 @@ a.btn.btn-success {
 	
 	height:200px;
 	background-color:teal;
+	width: -webkit-fill-available
 }
 
 
