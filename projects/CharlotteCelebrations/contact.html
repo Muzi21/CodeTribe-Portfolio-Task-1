@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="style.css" rel="stylesheet" type="text/css"/>
+  <title>Contact Us - Charlotte Celebrations </title>
+  
+</head>
+<body>
+    <header>
+        <nav>
+            <ul> 
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+  <div class="container">
+    <div style="text-align:center">
+      <h2>Contact Us</h2>
+      <p>Leave us a message:</p>
+    </div>
+		<br>
+		<br>
+		<br>
+    <div class="row">
+      <div class="column">
+        <p style = "font-size:20px;font-family:Helvetica;">Cleint Enquires</p>
+		
+		<br>
+		<br>
+		<br>
+		<p style = "font-size:13px;font-family:Helvetica;">Email: Muzimkahsthwa56@gmail.com</p>
+		<br>
+		<p style = "font-size:13px;font-family:Helvetica;">Phone: 082 776 8932</p>
+      </div>
+      <div class="column">
+        <form action="/submit_contact_form" method="post">
+          <label for="fname">Name and Surname* </label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+          
+          <label for="eaddress">Email Address* </label>
+          <input type="text" id="eaddress" name="emailaddress" placeholder="Your email.." required>
+		  
+            <label for="cnumber">Contact Number* </label>
+          <input type="text" id="cnumber" name="contactnumber" placeholder="Your contact number .." required>
+          
+         <label for="date">Date*</label>
+          <input type="text" id="date" name="date" placeholder="" required>
+          
+         <label for="lvenue">Location/Venue*</label>
+          <input type="text" id="lvenue" name="locationorvenue" placeholder="" required>
+          
+       
+       
+          
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px" required></textarea>
+          
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
