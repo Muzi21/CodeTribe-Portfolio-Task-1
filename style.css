@@ -29,6 +29,16 @@
       text-align: center;
       margin-top: 20px;
     }
+	.hero{
+		display:flex;
+		justify-content: space-around
+		
+		
+	}
+	.hero-content{
+		line-height:2;
+		
+	}
 
     .about-section {
       padding: 50px 0;
@@ -50,8 +60,14 @@
 		  display: flex;
           justify-content: center;
           align-items: center;
-          height
+          
+
 	      }
+		  .btn-primary {
+    color: #fff;
+    background-color: teal;
+    border-color: teal;
+}
 		  button{
 			    background-color: teal;
             border: none;
@@ -64,13 +80,9 @@
 		  }
 
     .imageP {
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      width: 100%;
-      max-width: 300px;
-      height: 300px;
-      display: block;
-      margin: auto;
-	   border-radius: 50%;
+      width:290px;
+	  height:290px;
+	  border-radius:50%;
     }
 	.VMT{
 
@@ -96,32 +108,158 @@
    border-radius:8px;
 }
 
+  .education {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .edu-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin-top: 20px;
+  }
+  .edu-column {
+    
+    padding: 10px;
+    
+  }
+
+
+#footer{
+	
+	height:200px;
+	background-color:teal;
+}
+
+
  .map {
 	 border-radius:8px;
      width: 65%;
  }
-         .contact-section {
-            padding: 50px 0;
-        }
+     
         .contact-info {
             text-align: center;
         }
-        .contact-info p {
-            font-size: 18px;
-            margin: 10px 0;
-        }
-        .contact-form {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        .form-control {
-            border-radius: 20px;
-            margin-bottom: 20px;
-        }
-        .form-control:focus {
-            box-shadow: none;
-        }
+		/* Center the form */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+      background-color: whitesmoke;
+	      padding-top: 50px;
+}
+
+/* Style form inputs */
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+form input[type="email"],[type="text"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Style form button */
+form button {
+  padding: 10px 20px;
+  background-color: teal;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Footer style */
+#footer {
+  
+  background-color: teal;
+  width: -webkit-fill-available;
+ 
+}
+     
+		
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
    
-		 
-		
-		
+.projects{
+    text-align: center;
+    margin-top: 2rem;
+    
+ }
+ .projects h2 {
+     color: var(--main-color);
+     font-size: 2.8rem;
+ }
+ .projects p {
+     padding-top: 1rem;
+ }
+
+ .cards {
+
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    align-items: center;
+    gap: 1.7rem;
+	--bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    flex-wrap: wrap;
+    margin-top: calc(-1* var(--bs-gutter-y));
+    margin-right: calc(-.5* var(--bs-gutter-x));
+    margin-left: calc(-.5* var(--bs-gutter-x));
+    
+ }
+
+
+ .card{
+    width: 20rem;
+    height: 500px;
+    background-color: white;
+   
+ }
